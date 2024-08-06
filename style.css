@@ -1,0 +1,225 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+  font-family: corbel;
+}
+/* The hero section*/
+#hero-section{
+ border-top: 8px solid #422;
+ background-image: url('images/business-building.jpg');
+ background-size: 100% 100%;
+}
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh 2vh;
+  color: #eee;
+  align-items: center;
+  background: transparent;
+  border-bottom: px solid skyblue;
+}
+#header #logo{
+  font-weight: bold;
+  font-size: 1rem;
+}
+#header #logo span{
+  font-weight: 200;
+}
+nav img{
+  width: 2rem;
+}
+#menu{
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  width: 0vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  align-content: center;
+  transition: .4s;
+  z-index: 2;
+}
+#menu a{
+  display: block;
+  color: #fff;
+  padding: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: none;
+}
+#check:checked ~ #menu{
+  width: 98vw;
+  right: 2px;
+  border: 1px solid grey;
+}
+#check:checked ~ #menu a{
+  display: block;
+}
+#content{
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  height: 27em;
+  text-align: center;
+}
+#content h1{
+  padding: 0px 0px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  font-size: 35px;
+  backdro-filter: blur(10px);
+}
+#content p{
+  line-height: 1.5rem;
+  color: #fff;
+  display: none;
+  visibility: hidden;
+  font-weight: 600;
+  margin: 30px auto;
+}
+
+#content #btn{
+  display: block;
+  padding: 15px 25px ;
+  font-weight: bold;
+  border: none;
+  border-radius: px;
+  background: #522;
+  color: #eee;
+  margin: auto;
+  margin-top: 50px;
+  box-shaow: 0px 0px 7px ;
+}
+@keyframes myFrame{
+  0%{
+    top: 20px;
+  }
+  50%{
+    top: 40px;
+  }
+  100%{
+    top: 20px;
+  }
+}
+#content #arrow{
+  position: relative;
+  animation-name: myFrame;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: s;
+  transition: 1.5s;
+  color: #fff;
+  font-size: 2em;
+  margin-top: 39px;
+  display: block;
+}
+
+/* About Srction */ 
+#about-section{
+  width: 100%;
+  height: fit-content;
+  padding: 35px 0px;
+  background: linear-gradient(to bottom, #522 50%, #422);
+  color: #bbb;
+  text-align: center;
+  border-top: px solid #422;
+}
+#about-section h2{
+  margin: 0px;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+#about-section p{
+  padding: 30px;
+  width: 90%;
+  line-height: 1.7rem;
+  margin: auto;
+  font-weight: bold;
+}
+
+/* sevices section */ 
+#services-section{
+  width: 100%;
+  height: auto;
+  border-bottom: px solid #522;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient( #fff 80%, #eee);
+}
+#services-section h2{
+  color: #822;
+  padding-top: 30px;
+}
+#services-section .service{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-image: liner-gradient(#eee 80%, #050);
+}
+#services-section .service p{
+  line-height: 1.5rem;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+}
+#services-section .service img{
+  width: 3rem;
+}
+/* Form */
+#form{
+  background: #fff;
+  padding: 20px 0px 20px 0px;
+}
+#form h2{
+  text-align: center;
+  color: #822;
+}
+#form input{
+  display: block;
+  width: 90%;
+  margin: 7px auto;
+  padding: 15px 20px;
+}
+#form #email{
+  margin-bottom: 15px;
+}
+#form p{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+#form input#btn{
+  background: linear-gradient(#722, #422);
+  box-shadow: 1px 3px 3px grey;
+  border: none;
+  font-weight: bold;
+  color: #ddd;
+}
+/* Footer section */
+#footer{
+  margin: 0;
+  margin-top: 0px;
+  padding: 0;
+  font-size: 0.9em;
+}
+#footer p{
+  padding: 50px 10px;
+  text-align: center;
+  background: #322;
+  color: #eee;
+  margin: 0;
+}
